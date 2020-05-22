@@ -6,7 +6,7 @@
 </template>
 
 <style lang="scss">
-  @import "~prismjs/themes/prism.css";
+  @import "~prismjs/themes/prism-tomorrow.css";
 </style>
 
 <script lang="ts">
