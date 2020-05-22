@@ -52,8 +52,9 @@
         get filteredLanguages(): LanguageInfo[] {
             if (this.filter && this.filter.length > 0) {
                 return this.languages.filter(lang => {
+                    let lng = lang as any;
                     // https://stackoverflow.com/questions/52558770/vuejs-search-filter/52560430
-                    return this.filter.toLowerCase().split(' ').every(v => (lang as any).language.toLowerCase().includes(v) || (lang as any).library.toLowerCase().includes(v))
+                    return this.filter.toLowerCase().split(' ').every(v => lng.language.toLowerCase().includes(v) || lng.library.toLowerCase().includes(v) || (lng.prismLanguage && lng.prismLanguage.toLowerCase().includes(v)))
                 })
             }
             return this.languages;
