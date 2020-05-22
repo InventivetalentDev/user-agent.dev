@@ -37,7 +37,7 @@
             fetch("/snippets/" + this.snippetPath).then(res=>res.text()).then(snippet=>{
                 this.snippetContent = snippet
                     .replace(/%%url%%/gi, this.url)
-                    .replace(/%%useragent/gi, this.userAgent);
+                    .replace(/%%useragent%%/gi, this.userAgent);
             })
         }
     }

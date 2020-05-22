@@ -1,0 +1,7 @@
+request({
+    uri: "%%url%%",
+    headers: {
+        'User-Agent': "%%useragent%%"
+    }
+}, function (error, response, body) {
+});

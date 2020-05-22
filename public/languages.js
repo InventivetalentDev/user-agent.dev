@@ -19,5 +19,13 @@ function languages() {
       library: "cURL",
       snippet: "php/curl.txt"
     },
+
+    //// NodeJS
+    {
+      language: "NodeJS",
+      prismLanguage: "javascript",
+      library: "request",
+      snippet: "nodejs/request.txt"
+    },
   ]
 }
