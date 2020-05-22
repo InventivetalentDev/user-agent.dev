@@ -1,7 +1,7 @@
 <template>
   <div class="language">
     <h2>{{ language }} <small>{{ library }}</small></h2>
-    <Prism :language="prismLang">{{ snippetContent }}</Prism>
+    <Prism :language="prismLang">{{ formattedSnippet }}</Prism>
   </div>
 </template>
 
@@ -24,7 +24,7 @@
         @Prop() private prismLanguage!: string;
         @Prop() private library!: string;
         @Prop() private snippetPath!: string;
-        snippetContent: string = "";
+        snippetBaseContent: string = "";
 
         @Prop() private userAgent!: string;
         @Prop() private url!: string;
@@ -33,11 +33,15 @@
             return (this.prismLanguage || this.language || 'markup').toLowerCase()
         }
 
+        get formattedSnippet() {
+            return this.snippetBaseContent
+                .replace(/%%url%%/gi, this.url)
+                .replace(/%%useragent%%/gi, this.userAgent);
+        }
+
         mounted(): void {
             fetch("/snippets/" + this.snippetPath).then(res=>res.text()).then(snippet=>{
-                this.snippetContent = snippet
-                    .replace(/%%url%%/gi, this.url)
-                    .replace(/%%useragent%%/gi, this.userAgent);
+                this.snippetBaseContent = snippet;
             })
         }
     }
