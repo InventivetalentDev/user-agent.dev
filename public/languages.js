@@ -1,3 +1,11 @@
+/*
+ {
+   language: "<Language Name>",
+   prismLanguage: "<(optional) code highlighting language for Prism if it differs from the language name>",
+   library: "<Library Name>",
+   snippet: "<Path to file in /public/snippets>"
+ }
+ */
 function languages() {
   return [
 
