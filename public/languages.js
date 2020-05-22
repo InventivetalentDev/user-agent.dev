@@ -5,14 +5,19 @@ function languages() {
     {
       language: "Java",
       library: "URLConnection",
-      snippet: "java/urlconnection.java"
+      snippet: "java/urlconnection.txt"
     },
     {
       language: "Java",
       library: "Jsoup",
-      snippet: "java/jsoup.java"
-    }
+      snippet: "java/jsoup.txt"
+    },
 
-
+    //// PHP
+    {
+      language: "PHP",
+      library: "cURL",
+      snippet: "php/curl.txt"
+    },
   ]
 }

@@ -26,18 +26,18 @@
         @Prop() private snippetPath!: string;
         snippetContent: string = "";
 
+        @Prop() private userAgent!: string;
+        @Prop() private url!: string;
+
         get prismLang() {
             return (this.prismLanguage || this.language || 'markup').toLowerCase()
         }
 
         mounted(): void {
-            try {
-                require('prismjs/components/prism-' + this.prismLang + ".js");
-            } catch (e) {
-                console.warn(e);
-            }
             fetch("/snippets/" + this.snippetPath).then(res=>res.text()).then(snippet=>{
-                this.snippetContent = snippet;
+                this.snippetContent = snippet
+                    .replace(/%%url%%/gi, this.url)
+                    .replace(/%%useragent/gi, this.userAgent);
             })
         }
     }
