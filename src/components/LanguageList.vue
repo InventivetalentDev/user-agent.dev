@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <div v-for="lang in filteredLanguages" :key="lang.language + lang.library">
+    <div v-for="lang in filteredLanguages" :key="lang.language + lang.library" :id="lang.language.toLowerCase() + '-' + lang.library.toLowerCase()">
       <LanguageInfo :language="lang.language" :prism-language="lang.prismLanguage" :library="lang.library" :snippet-path="lang.snippet" :user-agent="userAgent" :url="url"/>
     </div>
   </div>

@@ -1,12 +1,39 @@
 <template>
   <div class="language">
-    <h2>{{ language }} <small>{{ library }}</small></h2>
+    <h2>
+      <a :href="'#' + language.toLowerCase() + '-' + library.toLowerCase()"><font-awesome-icon class="hover-link language-link" icon="link" /></a>
+      {{ language }}
+      <small>{{ library }} </small>
+      <a target="_blank" :href="'https://github.com/InventivetalentDev/user-agent.dev/blob/master/public/snippets/' + snippetPath"><font-awesome-icon class="hover-link language-github" :icon="['fab', 'github']" /></a>
+    </h2>
     <Prism :language="prismLang">{{ formattedSnippet }}</Prism>
   </div>
 </template>
 
 <style lang="scss">
   @import "~prismjs/themes/prism-tomorrow.css";
+
+  .hover-link {
+    opacity: 0.1;
+    transition: opacity 0.3s;
+  }
+
+  .hover-link:hover {
+    opacity: 1;
+  }
+
+  .language-link {
+    width: 0.9em !important;
+    text-decoration: none;
+    color: #ababab;
+  }
+
+  .language-github {
+    opacity: 0.3;
+    width: 0.9em !important;
+    text-decoration: none;
+    color: #ababab;
+  }
 </style>
 
 <script lang="ts">
