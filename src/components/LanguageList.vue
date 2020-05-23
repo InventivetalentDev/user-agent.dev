@@ -84,6 +84,12 @@
 
             this.languages = langs as any;
             console.log(this.languages);
+
+            setTimeout(() => {
+                let hashEl = document.getElementById(location.hash.substr(1));
+                console.log(hashEl);
+                if (hashEl) hashEl.scrollIntoView()
+            }, 1000);
         }
 
     }
