@@ -35,5 +35,12 @@ function languages() {
       library: "request",
       snippet: "nodejs/request.txt"
     },
+
+    {
+      language: "NodeJS",
+      prismLanguage: "javascript",
+      library: "axios",
+      snippet: "nodejs/axios.txt"
+    }
   ]
 }
