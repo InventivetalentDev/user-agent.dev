@@ -50,14 +50,14 @@ export function languages(): {
     
     //// PowerShell
     {
-      language: "Powershell",
+      language: "PowerShell",
       prismLanguage: "powershell",
       library: "Invoke-RestMethod",
       snippet: "powershell/Invoke-RestMethod.txtt"
     },
     
     {
-      language: "Powershell",
+      language: "PowerShell",
       prismLanguage: "powershell",
       library: "Invoke-WebRequest",
       snippet: "powershell/Invoke-WebRequest.txt"
