@@ -18,6 +18,6 @@
   @import "~vue-material/dist/theme/default-dark.css";
 
   .md-app-container {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 </style>
