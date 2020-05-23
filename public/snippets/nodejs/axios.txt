@@ -1,0 +1,11 @@
+const axiosInstance = axios.create({
+    headers: {
+        common: {
+            'User-Agent': '%%useragent%%',
+        }
+    }
+});
+
+axiosInstance.get('%%url%%')
+.then(response => ...)
+.catch(reason => ...);
