@@ -53,7 +53,7 @@ export function languages(): {
       language: "PowerShell",
       prismLanguage: "powershell",
       library: "Invoke-RestMethod",
-      snippet: "powershell/Invoke-RestMethod.txtt"
+      snippet: "powershell/Invoke-RestMethod.txt"
     },
     
     {
