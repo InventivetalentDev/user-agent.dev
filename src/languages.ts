@@ -47,5 +47,20 @@ export function languages(): {
       library: "axios",
       snippet: "nodejs/axios.txt"
     },
+    
+    //// PowerShell
+    {
+      language: "PowerShell",
+      prismLanguage: "powershell",
+      library: "Invoke-RestMethod",
+      snippet: "powershell/Invoke-RestMethod.txt"
+    },
+    
+    {
+      language: "PowerShell",
+      prismLanguage: "powershell",
+      library: "Invoke-WebRequest",
+      snippet: "powershell/Invoke-WebRequest.txt"
+    },
   ]
 }
