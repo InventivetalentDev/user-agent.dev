@@ -1,0 +1,6 @@
+response = requests.get(
+    url='%%url%%',
+    headers={
+        'User-Agent': '%%useragent%%'
+    }
+)
