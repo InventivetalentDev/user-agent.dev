@@ -6,7 +6,12 @@
    snippet: "<Path to file in /public/snippets>"
  }
  */
-function languages() {
+export function languages(): {
+  language: string,
+  prismLanguage?: string,
+  library: string,
+  snippet: string,
+}[] {
   return [
 
     //// Java
@@ -41,6 +46,6 @@ function languages() {
       prismLanguage: "javascript",
       library: "axios",
       snippet: "nodejs/axios.txt"
-    }
+    },
   ]
 }

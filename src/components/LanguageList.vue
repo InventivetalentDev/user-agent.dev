@@ -32,7 +32,7 @@
     import { Component, Prop, Vue } from 'vue-property-decorator'
     import LanguageInfo from '@/components/LanguageInfo.vue'
 
-    // import loadLanguages from 'prismjs/components/index';
+    import { languages } from '@/languages'
 
     // https://github.com/PrismJS/prism/issues/1400
     const LANG_DEPENDENCIES = new Map<string, string[]>();
@@ -61,7 +61,7 @@
         }
 
         mounted(): void {
-            let langs = (window as any).languages(); // From languages.js
+            let langs = languages(); // From languages.ts
             console.log(langs);
 
             for (let lang of langs) {
@@ -82,7 +82,7 @@
             }
 
 
-            this.languages = langs;
+            this.languages = langs as any;
             console.log(this.languages);
         }
 

@@ -7,5 +7,5 @@ Please help out by adding more code snippets for languages/libraries that aren't
 
 * Fork this repo
 * Add the code snippet as a new file in [/public/snippets/](https://github.com/InventivetalentDev/user-agent.dev/tree/master/public/snippets)[language]/[library].txt
-* Add info to [/public/languages.js](https://github.com/InventivetalentDev/user-agent.dev/blob/master/public/languages.js)
+* Add info to [/src/languages.ts](https://github.com/InventivetalentDev/user-agent.dev/blob/master/src/languages.ts)
 * Create a pull-request!
