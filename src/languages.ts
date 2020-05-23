@@ -70,5 +70,13 @@ export function languages(): {
       library: "HttpClient",
       snippet: "csharp/httpclient.txt"
     },
+
+    //// Python
+    {
+      language: "Python",
+      prismLanguage: "python",
+      library: "requests",
+      snippet: "python/requests.txt"
+    }
   ]
 }
