@@ -60,9 +60,19 @@
             return (this.prismLanguage || this.language || 'markup').toLowerCase()
         }
 
+        get urlHost() {
+            return new URL(this.url).host;
+        }
+        
+        get urlPath() {
+            return new URL(this.url).pathname;
+        }
+
         get formattedSnippet() {
             return this.snippetBaseContent
                 .replace(/%%url%%/gi, this.url)
+                .replace(/%%urlhost%%/gi, this.urlHost)
+                .replace(/%%urlpath%%/gi, this.urlPath)
                 .replace(/%%useragent%%/gi, this.userAgent);
         }
 
