@@ -1,7 +1,10 @@
 const http = require("http");
 http.request({
     host: "%%urlhost%%",
-    path: "%%urlpath%%"
+    path: "%%urlpath%%",
+    headers: {
+        'User-Agent': '%%useragent%%'
+    }
 }, function(res) {
     res.setEncoding('utf8');
     res.on('data', function (chunk) {
