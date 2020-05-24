@@ -1,0 +1,7 @@
+request = Faraday.new(
+    url: '%%url%%',
+    headers: {
+        'User-Agent' => '%%useragent%%'
+    }
+)
+response = request.get

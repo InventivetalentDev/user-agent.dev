@@ -83,6 +83,14 @@ export function languages(): {
       prismLanguage: "python",
       library: "requests",
       snippet: "python/requests.txt"
+    },
+
+    //// Ruby
+    {
+      language: "Ruby",
+      prismLanguage: "ruby",
+      library: "Faraday",
+      snippet: "ruby/faraday.txt"
     }
   ]
 }
