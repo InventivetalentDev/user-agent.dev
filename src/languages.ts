@@ -37,6 +37,12 @@ export function languages(): {
     {
       language: "NodeJS",
       prismLanguage: "javascript",
+      library: "http",
+      snippet: "nodejs/http.txt"
+    },
+    {
+      language: "NodeJS",
+      prismLanguage: "javascript",
       library: "request",
       snippet: "nodejs/request.txt"
     },

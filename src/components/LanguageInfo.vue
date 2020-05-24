@@ -63,7 +63,7 @@
         get urlHost() {
             return new URL(this.url).host;
         }
-        
+
         get urlPath() {
             return new URL(this.url).pathname;
         }
