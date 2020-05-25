@@ -91,5 +91,10 @@ export function languages(): {
       library: "curl",
       snippet: "shell/curl.txt"
     },
+    {
+      language: "Shell",
+      library: "wget",
+      snippet: "shell/wget.txt"
+    },
   ]
 }
