@@ -83,6 +83,13 @@ export function languages(): {
       prismLanguage: "python",
       library: "requests",
       snippet: "python/requests.txt"
-    }
+    },
+
+    //// Shell
+    {
+      language: "Shell",
+      library: "curl",
+      snippet: "shell/curl.txt"
+    },
   ]
 }
