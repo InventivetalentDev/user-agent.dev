@@ -1,0 +1,4 @@
+Request request = new Request.Builder()
+  .url("%%url%%")
+  .addHeader("User-Agent", "%%useragent%%")
+  .build();
