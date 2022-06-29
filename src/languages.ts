@@ -25,6 +25,11 @@ export function languages(): {
       library: "Jsoup",
       snippet: "java/jsoup.txt"
     },
+    {
+      language: "Java",
+      library: "OkHttp",
+      snippet: "java/okhttp.txt"
+    },
 
     //// PHP
     {
