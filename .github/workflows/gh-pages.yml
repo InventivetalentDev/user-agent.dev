@@ -26,6 +26,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - run: git config --global url."https://".insteadOf git://
+
       - run: npm ci
       - run: npm test --if-present
       - run: npm run build
