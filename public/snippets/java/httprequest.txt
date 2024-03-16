@@ -1,0 +1,4 @@
+HttpRequest request = HttpRequest.newBuilder()
+    .uri(new URI("%%url%%"))
+    .header("User-Agent", "%%useragent%%")
+    .build();
