@@ -30,6 +30,11 @@ export function languages(): {
       library: "OkHttp",
       snippet: "java/okhttp.txt"
     },
+    {
+      language: "Java",
+      library: "HttpRequest",
+      snippet: "java/httprequest.txt"
+    },
 
     //// PHP
     {
