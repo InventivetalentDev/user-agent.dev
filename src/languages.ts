@@ -114,5 +114,10 @@ export function languages(): {
       library: "wget",
       snippet: "shell/wget.txt"
     },
+    {
+      language: "Shell",
+      library: "uclient-fetch",
+      snippet: "shell/uclient-fetch.txt"
+    },
   ]
 }
