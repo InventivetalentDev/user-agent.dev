@@ -103,21 +103,21 @@ export function languages(): {
       snippet: "ruby/faraday.txt"
     },
 
-    //// Shell
+    //// Bash
     {
-      language: "Shell",
+      language: "Bash",
       library: "curl",
-      snippet: "shell/curl.txt"
+      snippet: "bash/curl.txt"
     },
     {
-      language: "Shell",
+      language: "Bash",
       library: "wget",
-      snippet: "shell/wget.txt"
+      snippet: "bash/wget.txt"
     },
     {
-      language: "Shell",
+      language: "Bash",
       library: "uclient-fetch",
-      snippet: "shell/uclient-fetch.txt"
+      snippet: "bash/uclient-fetch.txt"
     },
   ]
 }
